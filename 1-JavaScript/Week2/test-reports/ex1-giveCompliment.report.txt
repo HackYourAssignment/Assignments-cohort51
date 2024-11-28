@@ -1,0 +1,25 @@
+*** Unit Test Error Report ***
+
+(node:3968) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3990) ExperimentalWarning: CommonJS module /Users/g/Desktop/hyf/Assignments-cohort51/node_modules/jest-util/build/requireOrImportModule.js is loading ES Module /Users/g/Desktop/hyf/Assignments-cohort51/jest.config.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex1-giveCompliment.test.js
+  js-wk2-ex1-giveCompliment
+    ✅ should exist and be executable (1 ms)
+    ✅ should have all TODO comments removed
+    ✅ `giveCompliment` should not contain unneeded console.log calls (1 ms)
+    ✅ should take a single parameter
+    ✅ should include a `compliments` array inside its function body
+    ✅ the `compliments` array should be initialized with 10 strings
+    ✅ should give a random compliment: You are `compliment`, `name`! (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        0.301 s, estimated 1 s
+Ran all test suites matching /\/Users\/g\/Desktop\/hyf\/Assignments-cohort51\/.dist\/1-JavaScript\/Week2\/unit-tests\/ex1-giveCompliment.test.js/i.
+No linting errors detected.
+No spelling errors detected.

@@ -1,0 +1,25 @@
+*** Unit Test Error Report ***
+
+(node:3077) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3099) ExperimentalWarning: CommonJS module /Users/g/Desktop/hyf/Assignments-cohort51/node_modules/jest-util/build/requireOrImportModule.js is loading ES Module /Users/g/Desktop/hyf/Assignments-cohort51/jest.config.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex2-dogYears.test.js
+  js-wk2-ex2-dogYears
+    ✅ should exist and be executable (2 ms)
+    ✅ should have all TODO comments removed (1 ms)
+    ✅ `calculateDogAge` should not contain unneeded console.log calls (1 ms)
+    ✅ should take a single parameter
+    ✅ should give 7 dog years for 1 human year (1 ms)
+    ✅ should give 14 dog years for 2 human years
+    ✅ give 21 dog years for 3 human years
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        0.461 s
+Ran all test suites matching /\/Users\/g\/Desktop\/hyf\/Assignments-cohort51\/.dist\/1-JavaScript\/Week2\/unit-tests\/ex2-dogYears.test.js/i.
+No linting errors detected.
+No spelling errors detected.

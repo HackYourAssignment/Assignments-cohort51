@@ -29,8 +29,15 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employeeRecords) {
+  let result = [];
+
+  for (let record of employeeRecords) {
+    let { name, occupation, email } = record;
+    result.push({ name, occupation, email });
+  }
+
+  return result;
 }
 
 // ! Test functions (plain vanilla JavaScript)

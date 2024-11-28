@@ -1,0 +1,28 @@
+*** Unit Test Error Report ***
+
+(node:3403) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3425) ExperimentalWarning: CommonJS module /Users/g/Desktop/hyf/Assignments-cohort51/node_modules/jest-util/build/requireOrImportModule.js is loading ES Module /Users/g/Desktop/hyf/Assignments-cohort51/jest.config.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex3-tellFortune.test.js
+  js-wk2-ex3-tellFortune
+    ✅ should exist and be executable (2 ms)
+    ✅ should have all TODO comments removed (1 ms)
+    ✅ `tellFortune` should not contain unneeded console.log calls
+    ✅ should take four parameters (1 ms)
+    ✅ should call function `selectRandomly` for each of its arguments (1 ms)
+    ✅ `numKids` should be an array initialized with 5 elements
+    ✅ `locations` should be an array initialized with 5 elements
+    ✅ `partnerNames` should be an array initialized with 5 elements (1 ms)
+    ✅ `jobTitles` should be an array initialized with 5 elements
+    ✅ should tell the fortune by randomly selecting array values (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        0.386 s, estimated 1 s
+Ran all test suites matching /\/Users\/g\/Desktop\/hyf\/Assignments-cohort51\/.dist\/1-JavaScript\/Week2\/unit-tests\/ex3-tellFortune.test.js/i.
+No linting errors detected.
+No spelling errors detected.
