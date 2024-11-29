@@ -14,10 +14,28 @@ it pure. Do the following:
    spread syntax.
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
+const shoppingCart = ['bananas', 'milk'];
+
 // ! Function under test
-function addToShoppingCart(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function addToShoppingCart(shoppingCart, item) {
+  if (!item) {
+    console.log('No item provided');
+    return shoppingCart;
+  }
+
+  if (shoppingCart.length < 3) {
+    return [...shoppingCart, item];
+  } else {
+    return [...shoppingCart.slice(1), item];
+  }
 }
+
+const item = '';
+
+console.log(addToShoppingCart(shoppingCart, item));
+console.log(addToShoppingCart());
+console.log(addToShoppingCart(shoppingCart, 'chocolate'));
+console.log(addToShoppingCart(shoppingCart, 'waffles'));
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

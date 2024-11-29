@@ -29,9 +29,20 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employeeRecords) {
+  const dataToKeep = ['name', 'occupation', 'email'];
+
+  return employeeRecords.map((obj) =>
+    Object.keys(obj).reduce((newObj, key) => {
+      if (dataToKeep.includes(key)) {
+        newObj[key] = obj[key];
+      }
+      return newObj;
+    }, {})
+  );
 }
+
+console.log(filterPrivateData(employeeRecords));
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
