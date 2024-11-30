@@ -32,30 +32,32 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function selectRandomly(arr) {
+  if (!arr || arr.length === 0) {
+    return null;
+  }
+  const random = Math.floor(Math.random() * arr.length);
+  return arr[random];
 }
 
-export function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+export function tellFortune(childrenNumber, partnerName, location, jobTitle) {
+  const result = `You will be a ${selectRandomly(
+    jobTitle
+  )} in ${selectRandomly(location)}, married to ${selectRandomly(
+    partnerName
+  )} with ${selectRandomly(childrenNumber)} kids.`;
+
+  return result;
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
+  const numKids = [2, 1, 4, 3, 0];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
+  const partnerNames = ['Eyob', 'Bini', 'Hanna', 'Selam', 'Merry'];
 
-  const locations = [
-    // TODO add elements here
-  ];
+  const locations = ['Amsterdam', 'Gilze', 'Utrecht', 'Amersfoort', 'Arnhem'];
 
-  const jobTitles = [
-    // TODO add elements here
-  ];
+  const jobTitles = ['Engineer', 'Doctor', 'SalesMan', 'WebDeveloper', 'Pilot'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
