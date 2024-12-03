@@ -29,8 +29,13 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employeeRecords) {
+  const privateDataRemoved = []; // Empty array for new employee records.
+  employeeRecords.forEach((i) => {
+    let { name, occupation, email } = i; // Destructure non-private properties from each object.
+    privateDataRemoved.push({ name, occupation, email }); // Push the properties to the new array.
+  });
+  return privateDataRemoved;
 }
 
 // ! Test functions (plain vanilla JavaScript)
