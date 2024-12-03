@@ -1,0 +1,1370 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest /Users/ali/Documents/cohort 51/Assignments-cohort51/.dist/1-JavaScript/Week2/unit-tests/ex1-giveCompliment.test.js --colors --noStackTrace --json
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  ● br-wk1-ex6-gameOfLife › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+ FAIL  .dist/1-JavaScript/Week2/unit-tests/ex3-tellFortune.test.js
+  ● js-wk2-ex3-tellFortune › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● js-wk2-ex3-tellFortune › should take four parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   4
+    Received length:   0
+    Received function: [Function tellFortune]
+
+  ● js-wk2-ex3-tellFortune › `numKids` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › `locations` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › `partnerNames` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › `jobTitles` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › should tell the fortune by randomly selecting array values
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "selectRandomly() is not called the expected number of times"
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  ● api-wk1-ex2-checkDoubleDigits › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex2-checkDoubleDigits › should call new Promise()
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › should be a function that takes a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● api-wk1-ex2-checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+  ● api-wk1-ex2-checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+  ● api-wk1-ex2-checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+  ● api-wk1-ex2-checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  ● api-wk1-ex1-johnWho › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex1-johnWho › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex1-johnWho › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+  ● api-wk1-ex1-johnWho › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex1-johnWho › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex1-johnWho › should resolve when called with a string argument
+
+    TypeError: callback is not a function
+
+  ● api-wk1-ex1-johnWho › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+  ● api-wk1-ex1-johnWho › should reject with an Error object when called without an argument
+
+    TypeError: callback is not a function
+
+  ● api-wk1-ex1-johnWho › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  ● api-wk1-ex3-rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex3-rollDie › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex3-rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex3-rollDie › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex3-rollDie › should resolve when the die settles successfully
+
+    TypeError: callback is not a function
+
+  ● api-wk1-ex3-rollDie › should resolve when the die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+  ● api-wk1-ex3-rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex1-giveCompliment.test.js
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ● api-wk2-ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+  ● api-wk2-ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ● api-wk1-ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex4-pokerDiceAll › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● api-wk1-ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ● api-wk2-ex4-diceRace › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex4-diceRace › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk2-ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (35.047 s)
+  ● br-wk1-ex5-catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex5-catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● br-wk1-ex5-catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+
+  ● Test suite failed to run
+
+    Die 1 rolled off the table.
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex1-bookList.test.js (36.384 s)
+  ● br-wk1-ex1-bookList › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex1-bookList › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+  ● br-wk1-ex1-bookList › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+  ● br-wk1-ex1-bookList › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: ""
+
+  ● br-wk1-ex1-bookList › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  ● js-wk3-ex3-lemonAllergy › sanitizeFruitBasket should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex3-lemonAllergy › sanitizeFruitBasket should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex3-lemonAllergy › sanitizeFruitBasket should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+ FAIL  1-JavaScript/Week3/assignment/ex2-mondaysWorth.test.js
+  ● js-wk3-mondaysWorth › computeEarnings should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function computeEarnings]
+
+  ● js-wk3-mondaysWorth › computeEarnings should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ● api-wk1-ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (37.16 s)
+  ● br-wk1-ex4-whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex4-whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● br-wk1-ex4-whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/1-JavaScript/Week3/unit-tests/ex5-wallet.test.js
+  ● js-wk3-ex5-wallet › q1: At line 24, which variables are in the scope marked Closure?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q2: What is in the Call Stack, from top to bottom?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q3: What tooltip appears when hovering over the third debug button?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q4: What is displayed in the console?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q5: The owner of the wallet with insufficient funds is?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+ FAIL  .dist/1-JavaScript/Week2/unit-tests/ex2-dogYears.test.js
+  ● js-wk2-ex2-dogYears › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● js-wk2-ex2-dogYears › should take a single parameter
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   1
+    Received length:   0
+    Received function: [Function calculateDogAge]
+
+  ● js-wk2-ex2-dogYears › should give 7 dog years for 1 human year
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Your doggie is 7 years old in dog years!"
+    Received: undefined
+
+  ● js-wk2-ex2-dogYears › should give 14 dog years for 2 human years
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Your doggie is 14 years old in dog years!"
+    Received: undefined
+
+  ● js-wk2-ex2-dogYears › give 21 dog years for 3 human years
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Your doggie is 21 years old in dog years!"
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  ● api-wk2-ex2-pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex2-pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex2-pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex2-pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  ● api-wk2-ex1-programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex1-programmerFun › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex1-programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex1-programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ PASS  1-JavaScript/Week3/assignment/ex1-doubleEvenNumbers.test.js
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  ● js-wk3-ex4-observable › observable should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  ● br-wk1-ex3-hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex3-hijackLogo › should set the `.src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● br-wk1-ex3-hijackLogo › should set the `.srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  ● br-wk1-ex2-aboutMe › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex2-aboutMe › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+  ● br-wk1-ex2-aboutMe › each <li> should rendered red (= rgb(255, 0, 0))
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+Summary of all failing tests
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  ● br-wk1-ex6-gameOfLife › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+  ● br-wk1-ex6-gameOfLife › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+ FAIL  .dist/1-JavaScript/Week2/unit-tests/ex3-tellFortune.test.js
+  ● js-wk2-ex3-tellFortune › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● js-wk2-ex3-tellFortune › should take four parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   4
+    Received length:   0
+    Received function: [Function tellFortune]
+
+  ● js-wk2-ex3-tellFortune › `numKids` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › `locations` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › `partnerNames` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › `jobTitles` should be an array initialized with 5 elements
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+  ● js-wk2-ex3-tellFortune › should tell the fortune by randomly selecting array values
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "selectRandomly() is not called the expected number of times"
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  ● api-wk1-ex2-checkDoubleDigits › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex2-checkDoubleDigits › should call new Promise()
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › should be a function that takes a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● api-wk1-ex2-checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+  ● api-wk1-ex2-checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+  ● api-wk1-ex2-checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+  ● api-wk1-ex2-checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk1-ex2-checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  ● api-wk1-ex1-johnWho › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex1-johnWho › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex1-johnWho › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+  ● api-wk1-ex1-johnWho › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex1-johnWho › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex1-johnWho › should resolve when called with a string argument
+
+    TypeError: callback is not a function
+
+  ● api-wk1-ex1-johnWho › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+  ● api-wk1-ex1-johnWho › should reject with an Error object when called without an argument
+
+    TypeError: callback is not a function
+
+  ● api-wk1-ex1-johnWho › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  ● api-wk1-ex3-rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex3-rollDie › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex3-rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex3-rollDie › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+  ● api-wk1-ex3-rollDie › should resolve when the die settles successfully
+
+    TypeError: callback is not a function
+
+  ● api-wk1-ex3-rollDie › should resolve when the die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+  ● api-wk1-ex3-rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ● api-wk2-ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+  ● api-wk2-ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ● api-wk1-ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex4-pokerDiceAll › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk1-ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● api-wk1-ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ● api-wk2-ex4-diceRace › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex4-diceRace › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+  ● api-wk2-ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (35.047 s)
+  ● br-wk1-ex5-catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex5-catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● br-wk1-ex5-catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+
+  ● Test suite failed to run
+
+    Die 1 rolled off the table.
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex1-bookList.test.js (36.384 s)
+  ● br-wk1-ex1-bookList › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex1-bookList › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+  ● br-wk1-ex1-bookList › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+  ● br-wk1-ex1-bookList › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: ""
+
+  ● br-wk1-ex1-bookList › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+ FAIL  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  ● js-wk3-ex3-lemonAllergy › sanitizeFruitBasket should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex3-lemonAllergy › sanitizeFruitBasket should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex3-lemonAllergy › sanitizeFruitBasket should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+ FAIL  1-JavaScript/Week3/assignment/ex2-mondaysWorth.test.js
+  ● js-wk3-mondaysWorth › computeEarnings should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function computeEarnings]
+
+  ● js-wk3-mondaysWorth › computeEarnings should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ● api-wk1-ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk1-ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (37.16 s)
+  ● br-wk1-ex4-whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex4-whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● br-wk1-ex4-whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/1-JavaScript/Week3/unit-tests/ex5-wallet.test.js
+  ● js-wk3-ex5-wallet › q1: At line 24, which variables are in the scope marked Closure?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q2: What is in the Call Stack, from top to bottom?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q3: What tooltip appears when hovering over the third debug button?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q4: What is displayed in the console?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+  ● js-wk3-ex5-wallet › q5: The owner of the wallet with insufficient funds is?
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+ FAIL  .dist/1-JavaScript/Week2/unit-tests/ex2-dogYears.test.js
+  ● js-wk2-ex2-dogYears › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● js-wk2-ex2-dogYears › should take a single parameter
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   1
+    Received length:   0
+    Received function: [Function calculateDogAge]
+
+  ● js-wk2-ex2-dogYears › should give 7 dog years for 1 human year
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Your doggie is 7 years old in dog years!"
+    Received: undefined
+
+  ● js-wk2-ex2-dogYears › should give 14 dog years for 2 human years
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Your doggie is 14 years old in dog years!"
+    Received: undefined
+
+  ● js-wk2-ex2-dogYears › give 21 dog years for 3 human years
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Your doggie is 21 years old in dog years!"
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  ● api-wk2-ex2-pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex2-pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex2-pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex2-pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  ● api-wk2-ex1-programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● api-wk2-ex1-programmerFun › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex1-programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● api-wk2-ex1-programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  ● js-wk3-ex4-observable › observable should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  ● br-wk1-ex3-hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex3-hijackLogo › should set the `.src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+  ● br-wk1-ex3-hijackLogo › should set the `.srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  ● br-wk1-ex2-aboutMe › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+  ● br-wk1-ex2-aboutMe › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+  ● br-wk1-ex2-aboutMe › each <li> should rendered red (= rgb(255, 0, 0))
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+
+Test Suites: 21 failed, 2 passed, 23 total
+Tests:       90 failed, 46 passed, 136 total
+Snapshots:   0 total
+Time:        48.183 s
+Ran all test suites matching /\/Users\/ali\/Documents\/cohort|51\/Assignments-cohort51\/.dist\/1-JavaScript\/Week2\/unit-tests\/ex1-giveCompliment.test.js/i.
+No linting errors detected.
+
