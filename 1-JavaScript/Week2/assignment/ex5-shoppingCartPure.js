@@ -16,7 +16,6 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(myShoppingCart, groceryItem) {
-  // TODO complete this function
   if (myShoppingCart.length < 3) {
     return [...myShoppingCart, groceryItem];
   } else {

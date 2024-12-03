@@ -20,7 +20,6 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
   beers: 1.2,
   chips: 1.2,
   water: 1.2,
@@ -29,7 +28,6 @@ const cartForParty = {
 };
 
 function calculateTotalPrice(obj) {
-  // TODO replace this comment with your code
   let totalAmount = 0;
   for (let things in obj) {
     totalAmount += obj[things];
@@ -46,7 +44,6 @@ function test1() {
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
   const expectedResult = 'Total:€6';
   const calculatedResult = calculateTotalPrice(cartForParty);
   if (calculatedResult === expectedResult) {

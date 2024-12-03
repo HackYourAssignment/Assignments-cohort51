@@ -28,15 +28,14 @@ export function giveCompliment(theName) {
     'clever',
     'fun',
     'lovely',
+    'good',
   ];
   const randomCompliment =
     compliments[Math.floor(Math.random() * compliments.length)];
-  return `You are ${randomCompliment}, ${theName}`;
-  // TODO complete this function
+  return `You are ${randomCompliment}, ${theName}!`;
 }
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
   const myName = 'KHIRO';
 
   console.log(giveCompliment(myName));

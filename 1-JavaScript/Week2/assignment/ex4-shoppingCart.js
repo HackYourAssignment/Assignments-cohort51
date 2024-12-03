@@ -20,8 +20,6 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(newItem) {
-  // TODO complete this function
-
   if (newItem === undefined) {
     return `You bought ${shoppingCart.join(', ')}!`;
   } else if (shoppingCart.length > 2) {

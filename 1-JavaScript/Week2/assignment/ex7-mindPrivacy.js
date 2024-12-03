@@ -30,7 +30,6 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(employeeRecords) {
-  // TODO complete this function
   const newArray = [];
   for (const puplicInfo of employeeRecords) {
     const { name, occupation, email } = puplicInfo;
