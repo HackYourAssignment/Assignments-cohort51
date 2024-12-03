@@ -30,7 +30,7 @@ export function giveCompliment(name) {
     'outstanding',
     'incredible',
   ];
-  let randomCompliments = Math.floor(Math.random() * compliments.length);
+  let randomNumber = Math.floor(Math.random() * compliments.length);
   return `You are ${compliments[randomCompliments]}, ${name}!`;
 }
 
