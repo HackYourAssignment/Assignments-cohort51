@@ -38,11 +38,11 @@
   "WARNING": "Do not update major versions of dependencies as they may break the test runner",
   "devDependencies": {
     "@actions/core": "^1.10.1",
-    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-env": "^7.26.0",
     "@eslint/js": "^9.9.0",
     "@html-validate/stylish": "^4.2.0",
     "@inquirer/prompts": "^5.3.8",
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.14",
     "@types/jsdom": "^21.1.7",
     "@types/serve-handler": "^6.1.4",
     "acorn": "^8.12.1",
@@ -68,7 +68,8 @@
     "rimraf": "^6.0.1",
     "serve-handler": "^6.1.5",
     "strip-ansi": "^7.1.0",
-    "typescript": "^5.6.2",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2",
     "typescript-eslint": "^8.0.1"
   }
 }
