@@ -1,0 +1,21 @@
+*** Unit Test Error Report ***
+
+(node:14627) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14649) ExperimentalWarning: CommonJS module /Users/g/Desktop/hyf/Assignments-cohort51/node_modules/jest-util/build/requireOrImportModule.js is loading ES Module /Users/g/Desktop/hyf/Assignments-cohort51/jest.config.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  1-JavaScript/Week3/assignment/ex4-observable/ex4-observable.test.js
+  js-wk3-ex4-observable
+    ✅ createObservable should exist and be a function (1 ms)
+    ✅ createObservable should return an object with `subscribe` and a `notify` function properties
+    ✅ observable should notify all subscribers of any notification (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.395 s
+Ran all test suites matching /\/Users\/g\/Desktop\/hyf\/Assignments-cohort51\/1-JavaScript\/Week3\/assignment\/ex4-observable\/ex4-observable.test.js/i.
+No linting errors detected.
+No spelling errors detected.

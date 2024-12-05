@@ -1,0 +1,21 @@
+*** Unit Test Error Report ***
+
+(node:14467) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14489) ExperimentalWarning: CommonJS module /Users/g/Desktop/hyf/Assignments-cohort51/node_modules/jest-util/build/requireOrImportModule.js is loading ES Module /Users/g/Desktop/hyf/Assignments-cohort51/jest.config.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  js-wk3-ex3-lemonAllergy
+    ✅ sanitizeFruitBasket should take two parameters (1 ms)
+    ✅ sanitizeFruitBasket should not modify the original `fruitBasket` array (1 ms)
+    ✅ sanitizeFruitBasket should return a new array that does not include the unwanted `lemon`
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.35 s
+Ran all test suites matching /\/Users\/g\/Desktop\/hyf\/Assignments-cohort51\/1-JavaScript\/Week3\/assignment\/ex3-lemonAllergy.test.js/i.
+No linting errors detected.
+No spelling errors detected.
