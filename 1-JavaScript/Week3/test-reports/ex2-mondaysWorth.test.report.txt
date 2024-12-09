@@ -1,0 +1,14 @@
+*** Unit Test Error Report ***
+
+ PASS  1-JavaScript/Week3/assignment/ex2-mondaysWorth.test.js
+  js-wk3-mondaysWorth
+    ✅ computeEarnings should take two parameters (2 ms)
+    ✅ computeEarnings should compute the earnings as a formatted Euro amount (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0.61 s, estimated 1 s
+Ran all test suites matching /C:\\Users\\vlady\\Desktop\\HYF\\Assignments-cohort51\\1-JavaScript\\Week3\\assignment\\ex2-mondaysWorth.test.js/i.
+No linting errors detected.
+No spelling errors detected.

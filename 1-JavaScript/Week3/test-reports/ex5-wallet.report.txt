@@ -1,0 +1,17 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/1-JavaScript/Week3/unit-tests/ex5-wallet.test.js
+  js-wk3-ex5-wallet
+    ✅ q1: At line 24, which variables are in the scope marked Closure? (1 ms)
+    ✅ q2: What is in the Call Stack, from top to bottom?
+    ✅ q3: What tooltip appears when hovering over the third debug button?
+    ✅ q4: What is displayed in the console?
+    ✅ q5: The owner of the wallet with insufficient funds is? (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        0.592 s, estimated 1 s
+Ran all test suites matching /C:\\Users\\vlady\\Desktop\\HYF\\Assignments-cohort51\\.dist\\1-JavaScript\\Week3\\unit-tests\\ex5-wallet.test.js/i.
+No linting errors detected.
+No spelling errors detected.
