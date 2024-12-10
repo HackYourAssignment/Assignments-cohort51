@@ -1,3 +1,5 @@
+const { duration } = require('moment/moment');
+
 /*------------------------------------------------------------------------------
 Full description atL https://github.com/HackYourFuture/Assignments/tree/main/1-JavaScript/Week4#exercise-2-whats-your-monday-worth
 
@@ -30,8 +32,14 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
+function computeEarnings(mondayTasks, hourlyRate) {
   // TODO complete this function
+  const durationMinutes = mondayTasks.map((task) => task.duration);
+  const totalMondayEarnings = durationMinutes.reduce(
+    (durations, duration) => durations + (duration / 60) * hourlyRate,
+    0
+  );
+  return `€${totalMondayEarnings.toFixed(2)}`;
 }
 
 // ! Unit tests (using Jest)

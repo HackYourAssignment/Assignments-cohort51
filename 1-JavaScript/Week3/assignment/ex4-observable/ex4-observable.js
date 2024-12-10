@@ -17,9 +17,11 @@ export function createObservable() {
   return {
     subscribe(subscriber) {
       // TODO complete this function
+      subscribers.push(subscriber);
     },
     notify(message) {
       // TODO complete this function
+      subscribers.forEach((subscriber) => subscriber(message));
     },
   };
 }
