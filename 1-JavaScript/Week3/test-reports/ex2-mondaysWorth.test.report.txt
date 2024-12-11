@@ -1,0 +1,18 @@
+*** Unit Test Error Report ***
+
+Debugger attached.
+Debugger attached.
+ PASS  1-JavaScript/Week3/assignment/ex2-mondaysWorth.test.js
+  js-wk3-mondaysWorth
+    ✅ computeEarnings should take two parameters (4 ms)
+    ✅ computeEarnings should compute the earnings as a formatted Euro amount (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0.974 s, estimated 1 s
+Ran all test suites matching /\/home\/konjit\/Desktop\/hyf\/Assignments-cohort51\/1-JavaScript\/Week3\/assignment\/ex2-mondaysWorth.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+No linting errors detected.
+No spelling errors detected.

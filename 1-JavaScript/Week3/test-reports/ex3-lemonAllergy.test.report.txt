@@ -1,0 +1,19 @@
+*** Unit Test Error Report ***
+
+Debugger attached.
+Debugger attached.
+ PASS  1-JavaScript/Week3/assignment/ex3-lemonAllergy.test.js
+  js-wk3-ex3-lemonAllergy
+    ✅ sanitizeFruitBasket should take two parameters (6 ms)
+    ✅ sanitizeFruitBasket should not modify the original `fruitBasket` array (2 ms)
+    ✅ sanitizeFruitBasket should return a new array that does not include the unwanted `lemon` (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.925 s, estimated 1 s
+Ran all test suites matching /\/home\/konjit\/Desktop\/hyf\/Assignments-cohort51\/1-JavaScript\/Week3\/assignment\/ex3-lemonAllergy.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+No linting errors detected.
+No spelling errors detected.
