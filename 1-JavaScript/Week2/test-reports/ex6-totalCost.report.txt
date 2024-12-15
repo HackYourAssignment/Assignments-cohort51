@@ -1,0 +1,9 @@
+A unit test file was not provided for this exercise.
+No linting errors detected.
+
+
+*** Spell Checker Report ***
+
+1-JavaScript/Week2/assignment/ex6-totalCost.js:23:3 - Unknown word (twix)
+1-JavaScript/Week2/assignment/ex6-totalCost.js:24:3 - Unknown word (icecream)
+1-JavaScript/Week2/assignment/ex6-totalCost.js:26:3 - Unknown word (redbull)

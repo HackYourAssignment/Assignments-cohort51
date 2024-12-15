@@ -7,8 +7,9 @@ Why pay a fortune teller when you can just program your fortune yourself?
    Give each array five random values that have to do with the name of 
    the variable.
 
-2. Complete the function `selectRandomly`. This function should take an array 
-   as a parameter and return a randomly selected element as its return value.
+2. Complete the function `selec
+tRandomly`. This function should take an array 
+   as a parameter and return a randomly selected element as its return value. 
 
 3. Complete the function named `tellFortune` as follows:
 
@@ -30,31 +31,37 @@ randomly select array elements four times inside the `tellFortune` function
 body, this code is now written once only in a separated function.
 -----------------------------------------------------------------------------*/
 
+import { isJSDocUnknownTag } from 'typescript';
+
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+function selectRandomly(array) {
+  const randomindex = Math.floor(Math.random() * array.length);
+  return array[randomindex];
 }
 
-export function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+export function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  const selectedkids = selectRandomly(numKids);
+  const selectedpartner = selectRandomly(partnerNames);
+  const selectedlocation = selectRandomly(locations);
+  const selectedjob = selectRandomly(jobTitles);
+  return `You will be a ${selectedjob} in ${selectedlocation}, married to ${selectedpartner} with ${selectedkids} kids.`;
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
+  const numKids = [0, 1, 2, 3, 4];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
+  const partnerNames = ['gea', 'geertje', 'annet', 'araz', 'haval'];
 
-  const locations = [
-    // TODO add elements here
-  ];
+  const locations = ['leeuwarden', 'amsterdam', 'erbil', 'utrecht', 'kobani'];
 
   const jobTitles = [
-    // TODO add elements here
+    'web developer',
+    'civil engineer',
+    'a counter',
+    'plumber',
+    'teacher',
   ];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));

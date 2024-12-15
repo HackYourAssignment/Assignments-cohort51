@@ -1,0 +1,41 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex3-tellFortune.test.js
+  js-wk2-ex3-tellFortune
+    ✅ should exist and be executable (2 ms)
+    ✅ should have all TODO comments removed
+    ✅ `tellFortune` should not contain unneeded console.log calls (1 ms)
+    ✅ should take four parameters
+    ✅ should call function `selectRandomly` for each of its arguments (1 ms)
+    ✅ `numKids` should be an array initialized with 5 elements (1 ms)
+    ✅ `locations` should be an array initialized with 5 elements
+    ✅ `partnerNames` should be an array initialized with 5 elements
+    ✅ `jobTitles` should be an array initialized with 5 elements
+    ✅ should tell the fortune by randomly selecting array values (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        1.306 s
+Ran all test suites matching /C:\\Users\\rizan\\OneDrive\\Desktop\\Assignments-cohort51\\.dist\\1-JavaScript\\Week2\\unit-tests\\ex3-tellFortune.test.js/i.
+No linting errors detected.
+
+
+*** Spell Checker Report ***
+
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:10:27 - Unknown word (selec)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:40:9 - Unknown word (randomindex)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:41:16 - Unknown word (randomindex)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:45:9 - Unknown word (selectedkids)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:46:9 - Unknown word (selectedpartner)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:47:9 - Unknown word (selectedlocation)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:48:9 - Unknown word (selectedjob)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:49:27 - Unknown word (selectedjob)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:49:45 - Unknown word (selectedlocation)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:49:77 - Unknown word (selectedpartner)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:49:101 - Unknown word (selectedkids)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:55:33 - Unknown word (geertje)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:55:44 - Unknown word (annet)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:55:53 - Unknown word (araz)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:55:61 - Unknown word (haval)
+1-JavaScript/Week2/assignment/ex3-tellFortune.js:57:70 - Unknown word (kobani)

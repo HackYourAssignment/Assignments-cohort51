@@ -1,0 +1,19 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex2-dogYears.test.js
+  js-wk2-ex2-dogYears
+    ✅ should exist and be executable (2 ms)
+    ✅ should have all TODO comments removed (1 ms)
+    ✅ `calculateDogAge` should not contain unneeded console.log calls
+    ✅ should take a single parameter
+    ✅ should give 7 dog years for 1 human year
+    ✅ should give 14 dog years for 2 human years
+    ✅ give 21 dog years for 3 human years
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        0.633 s
+Ran all test suites matching /C:\\Users\\rizan\\OneDrive\\Desktop\\Assignments-cohort51\\.dist\\1-JavaScript\\Week2\\unit-tests\\ex2-dogYears.test.js/i.
+No linting errors detected.
+No spelling errors detected.

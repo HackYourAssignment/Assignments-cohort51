@@ -1,0 +1,26 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/1-JavaScript/Week2/unit-tests/ex1-giveCompliment.test.js
+  js-wk2-ex1-giveCompliment
+    ✅ should exist and be executable (2 ms)
+    ✅ should have all TODO comments removed (1 ms)
+    ✅ `giveCompliment` should not contain unneeded console.log calls (1 ms)
+    ✅ should take a single parameter
+    ✅ should include a `compliments` array inside its function body
+    ✅ the `compliments` array should be initialized with 10 strings
+    ✅ should give a random compliment: You are `compliment`, `name`! (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        0.735 s, estimated 1 s
+Ran all test suites matching /C:\\Users\\rizan\\OneDrive\\Desktop\\Assignments-cohort51\\.dist\\1-JavaScript\\Week2\\unit-tests\\ex1-giveCompliment.test.js/i.
+No linting errors detected.
+
+
+*** Spell Checker Report ***
+
+1-JavaScript/Week2/assignment/ex1-giveCompliment.js:33:9 - Unknown word (randomindex)
+1-JavaScript/Week2/assignment/ex1-giveCompliment.js:35:34 - Unknown word (randomindex)
+1-JavaScript/Week2/assignment/ex1-giveCompliment.js:41:19 - Unknown word (Rizan)
+1-JavaScript/Week2/assignment/ex1-giveCompliment.js:41:25 - Unknown word (ibrahim)
