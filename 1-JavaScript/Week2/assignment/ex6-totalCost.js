@@ -39,7 +39,8 @@ function calculateTotalPrice(obj) {
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   // TODO replace this comment with your code
-  console.log(calculateTotalPrice(cartForParty));
+  console.assert( calculateTotalPrice.length === 1 );
+  
 }
 
 function test2() {
