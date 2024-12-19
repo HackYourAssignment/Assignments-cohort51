@@ -1,0 +1,8 @@
+A unit test file was not provided for this exercise.
+No linting errors detected.
+
+
+*** Spell Checker Report ***
+
+1-JavaScript/Week2/assignment/ex7-mindPrivacy.js:34:14 - Unknown word (puplic)
+1-JavaScript/Week2/assignment/ex7-mindPrivacy.js:35:41 - Unknown word (puplic)
