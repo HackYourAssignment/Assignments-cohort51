@@ -1,4 +1,7 @@
 // @ts-check
+
+import e from "express";
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-Browsers/Week1#exercise-6-conways-game-of-life
 
@@ -17,6 +20,7 @@ const NUM_ROWS = 40;
  * @property {number} y
  * @property {boolean} alive
  * @property {boolean} [nextAlive]
+ * @property {number} lifetime
  */
 
 /** @typedef {GridCell[]} GridRow */
@@ -30,10 +34,12 @@ const NUM_ROWS = 40;
  */
 function createCell(x, y) {
   const alive = Math.random() > 0.5;
+  let lifetime = alive ? 1 : 0;
   return {
     x,
     y,
     alive,
+    lifetime,
   };
 }
 
@@ -73,9 +79,21 @@ export function createGame(context, numRows, numColumns) {
 
   /**
    * Draw a cell onto the canvas
-   * @param {GridCell} cell
+   * @param {number} lifetime
    */
-  function drawCell(cell) {
+   function getOpacity(lifetime) {
+    if (lifetime === 1) 
+      return 0.25;
+    else if (lifetime === 2) 
+      return 0.5;
+    else if (lifetime === 3) 
+      return 0.75;
+    else {
+      return 1;
+    }
+  }
+    
+      function drawCell(cell) {
     // Draw cell background
     context.fillStyle = '#303030';
     context.fillRect(
@@ -84,10 +102,9 @@ export function createGame(context, numRows, numColumns) {
       CELL_SIZE,
       CELL_SIZE
     );
-
     if (cell.alive) {
       // Draw living cell inside background
-      context.fillStyle = `rgb(24, 215, 236)`;
+      context.fillStyle = `rgb(24, 215, 236, ${getOpacity(cell.lifetime)})`;
       context.fillRect(
         cell.x * CELL_SIZE + 1,
         cell.y * CELL_SIZE + 1,
@@ -144,11 +161,14 @@ export function createGame(context, numRows, numColumns) {
       if (numAlive === 2) {
         // Living cell remains living, dead cell remains dead
         cell.nextAlive = cell.alive;
+        cell.lifetime++;
       } else if (numAlive === 3) {
         // Dead cell becomes living, living cell remains living
+        cell.lifetime = 1;
         cell.nextAlive = true;
       } else {
         // Living cell dies, dead cell remains dead
+        cell.lifetime = 0;
         cell.nextAlive = false;
       }
     });
