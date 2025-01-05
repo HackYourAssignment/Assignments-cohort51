@@ -21,7 +21,20 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-  // TODO complete this function
-}
+   const cat = document.querySelector('img');
+   let position = 0;
 
-// TODO execute `catWalk` when the browser has completed loading the page
+   function moveCat() {
+     position += 10;
+     cat.style.left = position + 'px';
+
+     if (position > window.innerWidth) {
+       position = -cat.width;
+     }
+ }
+   setInterval(moveCat, 50);
+}
+catWalk();
+ window.onload = catWalk;
+
+
