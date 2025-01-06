@@ -1,1 +1,6 @@
-/* Write your style here */
+li {
+  width: 400px;
+  margin: 8px;
+  padding: 8px;
+  display: inline-block;
+}

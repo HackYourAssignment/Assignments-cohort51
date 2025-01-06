@@ -18,7 +18,22 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ul = document.createElement('ul');
+  books.forEach((book) => {
+    const p = document.createElement('P');
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    p.textContent = `${book.title} by ${book.author}`;
+    li.appendChild(p);
+    const bookTitleLower = book.title.toLowerCase();
+    const bookUrlTitle = bookTitleLower.replace(/ /g, '_');
+    img.src = `./assets/${bookUrlTitle}.jpg`;
+    img.alt = book.title;
+    li.appendChild(img);
+    li.style.backgroundColor = book.alreadyRead === true ? 'green' : 'red';
+    ul.appendChild(li);
+  });
+  return ul;
 }
 
 function main() {
@@ -39,6 +54,7 @@ function main() {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
+
       alreadyRead: true,
     },
   ];
