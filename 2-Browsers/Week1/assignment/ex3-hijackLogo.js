@@ -7,7 +7,14 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  // TODO your code goes in here
+  const logo = document.querySelector('img[alt="Google"]');
+
+  if (logo) {
+      logo.src = 'https://avatars.githubusercontent.com/u/20858568?s=280&v=4';
+      logo.srcset = 'https://avatars.githubusercontent.com/u/20858568?s=280&v=4';
+ } else {
+    console.error('The Google logo was not found');
+  }
 }
 
 hijackGoogleLogo();

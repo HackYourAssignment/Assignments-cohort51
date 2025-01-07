@@ -18,8 +18,34 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
-}
+  const bookList = document.createElement('ul');
+  bookList.style.display = 'flex'; // Flexbox for side-by-side layout
+  bookList.style.gap = '20px'; // Add space between items
+  bookList.style.padding = '10px';
+
+  books.forEach(book => {
+    const bookContent = document.createElement('p');
+    bookContent.textContent = `${book.title} by ${book.author}`;
+    const bookItem = document.createElement('li');
+    const bookCover = document.createElement('img');
+    const imageName = book.title.toLowerCase().replace(/\s+/g, '_') + '.jpg';
+    bookCover.src = `assets/${imageName}`;
+    bookCover.alt = 'book cover';
+    book.alreadyRead === true ? bookItem.classList.add('read') : bookItem.classList.add('unread')
+
+    // Change the style of the book based on whether it has been read
+    bookItem.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
+    bookItem.style.padding = '10px';
+    bookItem.style.marginBottom = '10px';
+    
+     // Add some spacing for book content
+    bookContent.style.margin = '10px';
+    bookItem.appendChild(bookContent);
+    bookItem.appendChild(bookCover);
+    bookList.appendChild(bookItem);
+  })
+  return bookList;
+};
 
 function main() {
   const myBooks = [
@@ -44,7 +70,12 @@ function main() {
   ];
 
   const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+  const container = document.querySelector('#bookList');
+  if (container) {
+    container.appendChild(ulElement);
+  } else {
+    console.error('Container element #bookList not found.');
+  }
 }
 
 window.addEventListener('load', main);

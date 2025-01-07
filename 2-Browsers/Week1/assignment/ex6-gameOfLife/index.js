@@ -16,6 +16,7 @@ const NUM_ROWS = 40;
  * @property {number} x
  * @property {number} y
  * @property {boolean} alive
+ * @property {number} lifeTime
  * @property {boolean} [nextAlive]
  */
 
@@ -34,6 +35,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0, // Initialize lifeTime
   };
 }
 
@@ -136,30 +138,35 @@ export function createGame(context, numRows, numColumns) {
    * rules on each cell.
    */
   function updateGrid() {
-    // Loop over all cells to determine their next state.
+    // Determine the next state of each cell
     forEachCell((cell) => {
-      // Count number of living neighboring cells
       const numAlive = countLivingNeighbors(cell);
 
-      if (numAlive === 2) {
-        // Living cell remains living, dead cell remains dead
-        cell.nextAlive = cell.alive;
-      } else if (numAlive === 3) {
-        // Dead cell becomes living, living cell remains living
-        cell.nextAlive = true;
+      if (cell.alive) {
+        if (numAlive === 2 || numAlive === 3) {
+          cell.nextAlive = true; // Survive
+        } else {
+          cell.nextAlive = false; // Die
+        }
       } else {
-        // Living cell dies, dead cell remains dead
-        cell.nextAlive = false;
+        if (numAlive === 3) {
+          cell.nextAlive = true; // Come alive
+        } else {
+          cell.nextAlive = false; // Stay dead
+        }
       }
     });
 
-    // Apply the newly computed state to the cells
+    // Apply the computed state and update lifeTime
     forEachCell((cell) => {
+      if (cell.nextAlive) {
+        cell.lifeTime = cell.alive ? cell.lifeTime + 1 : 1; // Increment or reset lifeTime
+      } else {
+        cell.lifeTime = 0; // Reset lifeTime if dead
+      }
       cell.alive = cell.nextAlive ?? false;
     });
   }
-
-  //
 
   /**
    * Render a visual representation of the grid
