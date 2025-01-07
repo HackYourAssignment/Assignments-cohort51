@@ -12,13 +12,45 @@ element with the book title and author.
 5. Change the style of the book depending on whether you have read it(green) or not(red).
 
 The end result should look something like this:
-https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
+https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/	
 
 -----------------------------------------------------------------------------*/
-//cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookUl = document.createElement('ul');
+
+  books.forEach((book) => {
+    const bookLi = document.createElement('li');
+
+    const bookInfo = document.createElement('div');
+
+    const bookTitle = document.createElement('p');
+    bookTitle.textContent = book.title;
+
+    const bookAuthor = document.createElement('p');
+    bookAuthor.textContent = `by: ${book.author}`;
+
+    bookInfo.appendChild(bookTitle);
+    bookInfo.appendChild(bookAuthor);
+
+    // Create the cover image
+    const bookCover = document.createElement('img');
+    bookCover.src = `assets/${book.title.replace(/ /g, '_')}.jpg`;
+    bookCover.alt = book.title;
+    bookCover.style.display = 'flex';
+
+    // Set background color based on read status
+    bookLi.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
+
+    // Append all elements to the list item
+    bookLi.appendChild(bookInfo);
+    bookLi.appendChild(bookCover);
+
+    // Append the list item to the unordered list
+    bookUl.appendChild(bookLi);
+  });
+
+  return bookUl;
 }
 
 function main() {
