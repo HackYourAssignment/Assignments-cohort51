@@ -136,29 +136,33 @@ export function createGame(context, numRows, numColumns) {
    * rules on each cell.
    */
   function updateGrid() {
-    // Loop over all cells to determine their next state.
     forEachCell((cell) => {
-      // Count number of living neighboring cells
       const numAlive = countLivingNeighbors(cell);
-
-      if (numAlive === 2) {
-        // Living cell remains living, dead cell remains dead
-        cell.nextAlive = cell.alive;
-      } else if (numAlive === 3) {
-        // Dead cell becomes living, living cell remains living
-        cell.nextAlive = true;
+  
+      if (cell.alive) {
+        if (numAlive < 2 || numAlive > 3) {
+          cell.nextAlive = false; 
+          cell.lifeTime = 0; 
+        } else {
+          cell.nextAlive = true; 
+          cell.lifeTime = (cell.lifeTime || 0) + 1; 
+        }
       } else {
-        // Living cell dies, dead cell remains dead
-        cell.nextAlive = false;
+        if (numAlive === 3) {
+          cell.nextAlive = true;
+          cell.lifeTime = 1;
+        } else {
+          cell.nextAlive = false;
+          cell.lifeTime = 0;
+        }
       }
     });
-
-    // Apply the newly computed state to the cells
+  
     forEachCell((cell) => {
       cell.alive = cell.nextAlive ?? false;
     });
   }
-
+  
   //
 
   /**
