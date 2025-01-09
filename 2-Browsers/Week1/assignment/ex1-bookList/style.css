@@ -1,1 +1,39 @@
-/* Write your style here */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  li img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  li p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #3c3b3b;
+  }
+  
