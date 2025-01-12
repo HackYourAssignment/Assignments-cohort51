@@ -12,7 +12,7 @@ Full description atL https://github.com/HackYourFuture/Assignments/tree/main/1-J
 const mondayTasks = [
   {
     name: 'Daily standup',
-    duration: 30, // specified in minutes
+    duration: 30, 
   },
   {
     name: 'Feature discussion',
@@ -30,9 +30,17 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, rate) {
+  return (
+    '€' +
+    tasks
+      .map(task => task.duration / 60) 
+      .map(hours => hours * rate) 
+      .reduce((total, earnings) => total + earnings, 0) 
+      .toFixed(2) 
+  );
 }
+
 
 // ! Unit tests (using Jest)
 describe('js-wk3-mondaysWorth', () => {
