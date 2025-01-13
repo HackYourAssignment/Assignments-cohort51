@@ -1,0 +1,15 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  br-wk1-ex3-hijackLogo
+    ✅ should have all TODO comments removed (3 ms)
+    ✅ should set the `.src` property
+    ✅ should set the `.srcset` property
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.142 s
+Ran all test suites matching /C:\\Users\\vlady\\Desktop\\HYF\\Assignments-cohort51\\.dist\\2-Browsers\\Week1\\unit-tests\\ex3-hijackLogo.test.js/i.
+No linting errors detected.
+No spelling errors detected.

@@ -1,1 +1,11 @@
 /* 3. Add a css rule for .list-item to make the color red. */
+
+.list-item {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}

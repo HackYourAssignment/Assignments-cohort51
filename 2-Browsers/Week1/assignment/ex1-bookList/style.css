@@ -1,1 +1,35 @@
 /* Write your style here */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  width: auto;
+  height: 100%;
+}
+
+.bookList {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img {
+  max-width: 100%;
+
+}
+
+.alreadyReadTrue {
+  background-color: lightgreen;
+  list-style-type: none;
+  margin: 8px;
+  padding: 8px;
+
+}
+
+.alreadyReadFalse {
+  background-color: red;
+  list-style-type: none;
+  margin: 8px;
+  padding: 8px;
+}
