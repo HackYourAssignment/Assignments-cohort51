@@ -8,7 +8,6 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 ------------------------------------------------------------------------------*/
 const timeElement = document.createElement('div');
   document.body.appendChild(timeElement);
-  let intervalId;
 
   function updateTime() {
     const now = new Date();
@@ -20,13 +19,9 @@ const timeElement = document.createElement('div');
 
     timeElement.textContent = currentTime;
   }
-  function startClock() {
-    updateTime();
-    intervalId = setInterval(updateTime, 1000);
-  }
-  function stopClock() {
-    clearInterval(intervalId);
-  }
 
+  setInterval(updateTime, 1000);
 
-  window.onload = startClock;
+  updateTime();
+
+  window.onload = updateTime;

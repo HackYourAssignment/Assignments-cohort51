@@ -20,32 +20,21 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-const imgRef = Array.from(document.getElementsByTagName('img'))[0];
-const dancingCat =
-  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-const walkingCat = imgRef.src;
-let position = 0;
-imgRef.style.left = `${position}px`;
-
 function catWalk() {
+   const cat = document.querySelector('img');
+   let position = 0;
 
-  if (position > window.innerWidth - imgRef.width) {
-    position = 0;
-    imgRef.style.left = `${position}px`;
-  } else if (position >= (window.innerWidth / 2) - 200 && position <= (window.innerWidth / 2) - 190) {
-    imgRef.src = dancingCat;
-    setTimeout(() => {
-      imgRef.src = walkingCat;
-      position += 10;
-      imgRef.style.left = `${position}px`;
-    }, 5000);
-  } else {
-    position += 10;
-    imgRef.style.left = `${position}px`;
-  }
+   function moveCat() {
+     position += 10;
+     cat.style.left = position + 'px';
+
+     if (position > window.innerWidth) {
+       position = -cat.width;
+     }
+ }
+   setInterval(moveCat, 50);
 }
+catWalk();
+ window.onload = catWalk;
 
 
-const timeInterval = setInterval(catWalk, 50);
-
-window.onload = timeInterval;
