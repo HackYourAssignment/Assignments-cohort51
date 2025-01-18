@@ -1,0 +1,34 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest C:/Assignments-cohort51/.dist/2-Browsers/Week1/unit-tests/ex1-bookList.test.js --colors --noStackTrace --json
+(node:34872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ FAIL  .dist/2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  br-wk1-ex1-bookList
+    ❌ HTML should be syntactically valid (120 ms)
+    ✅ should have all TODO comments removed (1 ms)
+    ✅ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    ✅ should contain a <ul> with 3 <li> elements (1 ms)
+    ✅ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✅ should contain an <img> element for each book (1 ms)
+
+  ● br-wk1-ex1-bookList › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:103  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:270  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:426  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.827 s, estimated 11 s
+Ran all test suites matching /C:\\Assignments-cohort51\\.dist\\2-Browsers\\Week1\\unit-tests\\ex1-bookList.test.js/i.
+No linting errors detected.
+No spelling errors detected.

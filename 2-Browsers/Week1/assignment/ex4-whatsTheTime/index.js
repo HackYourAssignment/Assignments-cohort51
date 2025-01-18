@@ -1,3 +1,5 @@
+// const { isMinusToken } = require('typescript');
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-Browsers/Week1#exercise-4-whats-the-time
 
@@ -7,7 +9,28 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
-}
+  const currentTime = new Date();
+  let hours = currentTime.getHours();
+  let minutes = currentTime.getMinutes();
+  let seconds = currentTime.getSeconds();
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+  hours = hours < 10 ? '0' + hours : hours;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+  const timeStyle = `${hours}:${minutes}:${seconds}`;
+
+  const timeDive = document.getElementById('time');
+
+  if (!timeDive) {
+    const div = document.createElement('div');
+    div.id = 'time';
+    div.textContent = timeStyle;
+    document.body.appendChild(div);
+  } else {
+    timeDive.textContent = timeStyle;
+  }
+}
+window.addEventListener('load', () => {
+  addCurrentTime();
+  setInterval(addCurrentTime, 1000);
+});
