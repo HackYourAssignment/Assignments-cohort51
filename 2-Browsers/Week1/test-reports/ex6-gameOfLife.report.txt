@@ -1,0 +1,23 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  br-wk1-ex6-gameOfLife
+    ✅ should exist and be executable (2 ms)
+    ✅ a living cell with zero living neighbors should die and have its life time reset to zero (1 ms)
+    ✅ a living cell with one living neighbor should die and have its life time reset to zero (1 ms)
+    ✅ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    ✅ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    ✅ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✅ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✅ a dead cell with one living neighbor should remain dead and have a life time of zero (1 ms)
+    ✅ a dead cell with two living neighbors should remain dead and have a life time of zero (6 ms)
+    ✅ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✅ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        0.855 s, estimated 1 s
+Ran all test suites matching /\/home\/konjit\/Desktop\/hyf\/Assignments-cohort51\/.dist\/2-Browsers\/Week1\/unit-tests\/ex6-gameOfLife.test.js/i.
+No linting errors detected.
+No spelling errors detected.

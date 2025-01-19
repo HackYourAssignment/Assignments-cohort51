@@ -1,1 +1,37 @@
 /* Write your style here */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: bisque;
+}
+.read {
+  background-color: green;
+}
+
+.unread {
+  background-color: red;
+}
+
+h1 {
+  padding: 2.5rem;
+  font-size: 2rem;
+}
+ul {
+  padding: 2.5rem;
+  display: flex;
+  gap: 3rem;
+}
+li {
+  list-style: none;
+  background-color: green;
+  padding: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+}

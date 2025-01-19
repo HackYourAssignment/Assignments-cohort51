@@ -20,8 +20,51 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const catImage = document.querySelector('img');
+
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+
+const dancingCatUrl =
+  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+const walkingCatUrl = catImage.src;
+
+let catLeftPos = 0;
+
+const catWidth = catImage.offsetWidth;
+const catHeight = catImage.offsetHeight;
+
+const STEP_RIGHT = 10;
+
+const WALKING_INTERVAL = 50;
+const DANCING_INTERVAL = 5000;
+
+let catWalking = null;
+let isDancing = false;
+
 function catWalk() {
-  // TODO complete this function
+  if (isDancing) return;
+
+  catLeftPos += STEP_RIGHT;
+
+  if (catLeftPos >= screenWidth - catWidth) {
+    catLeftPos = 0;
+  }
+
+  catImage.style.left = catLeftPos + 'px';
+
+  const middleX = screenWidth / 2 - catWidth / 2;
+  if (catLeftPos >= middleX && catLeftPos < middleX + STEP_RIGHT) {
+    isDancing = true;
+    catImage.src = dancingCatUrl;
+
+    setTimeout(() => {
+      isDancing = false;
+      catImage.src = walkingCatUrl;
+    }, DANCING_INTERVAL);
+  }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', () => {
+  catWalking = setInterval(catWalk, WALKING_INTERVAL);
+});

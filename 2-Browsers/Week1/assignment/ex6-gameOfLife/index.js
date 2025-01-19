@@ -17,6 +17,7 @@ const NUM_ROWS = 40;
  * @property {number} y
  * @property {boolean} alive
  * @property {boolean} [nextAlive]
+ * @property {number}  lifeTime
  */
 
 /** @typedef {GridCell[]} GridRow */
@@ -30,10 +31,12 @@ const NUM_ROWS = 40;
  */
 function createCell(x, y) {
   const alive = Math.random() > 0.5;
+  const lifeTime = alive ? 1 : 0;
   return {
     x,
     y,
     alive,
+    lifeTime,
   };
 }
 
@@ -73,8 +76,14 @@ export function createGame(context, numRows, numColumns) {
 
   /**
    * Draw a cell onto the canvas
-   * @param {GridCell} cell
+   * @param {number} lifeTime
    */
+  function getOpacity(lifeTime) {
+    if (lifeTime === 1) return 0.25;
+    else if (lifeTime === 2) return 0.5;
+    else if (lifeTime === 3) return 0.75;
+    else return 1;
+  }
   function drawCell(cell) {
     // Draw cell background
     context.fillStyle = '#303030';
@@ -87,7 +96,8 @@ export function createGame(context, numRows, numColumns) {
 
     if (cell.alive) {
       // Draw living cell inside background
-      context.fillStyle = `rgb(24, 215, 236)`;
+
+      context.fillStyle = `rgba(24, 215, 236, ${getOpacity(cell.lifeTime)})`;
       context.fillRect(
         cell.x * CELL_SIZE + 1,
         cell.y * CELL_SIZE + 1,
@@ -144,11 +154,15 @@ export function createGame(context, numRows, numColumns) {
       if (numAlive === 2) {
         // Living cell remains living, dead cell remains dead
         cell.nextAlive = cell.alive;
+        cell.alive ? cell.lifeTime++ : (cell.lifeTime = 0);
+        //cell.lifeTime++;
       } else if (numAlive === 3) {
         // Dead cell becomes living, living cell remains living
+        cell.lifeTime++;
         cell.nextAlive = true;
       } else {
         // Living cell dies, dead cell remains dead
+        cell.lifeTime = 0;
         cell.nextAlive = false;
       }
     });

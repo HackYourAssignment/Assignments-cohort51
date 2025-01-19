@@ -1,0 +1,18 @@
+*** Unit Test Error Report ***
+
+ PASS  .dist/2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.473 s)
+  br-wk1-ex4-whatsTheTime
+    ✅ HTML should be syntactically valid (268 ms)
+    ✅ should have all TODO comments removed (1 ms)
+    ✅ should use `setInterval()` (1 ms)
+    ✅ should not call `setInterval()` more than once (2002 ms)
+    ✅ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    ✅ `window.onload` or `window.addEventListener` should not call its event handler function (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        5.783 s
+Ran all test suites matching /\/home\/konjit\/Desktop\/hyf\/Assignments-cohort51\/.dist\/2-Browsers\/Week1\/unit-tests\/ex4-whatsTheTime.test.js/i.
+No linting errors detected.
+No spelling errors detected.
