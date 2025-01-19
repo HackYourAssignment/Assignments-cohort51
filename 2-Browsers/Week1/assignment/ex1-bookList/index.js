@@ -18,7 +18,51 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  // Creating the ul element to hold the books
+  const bookList = document.createElement('ul');
+
+  // Iterate through array of books
+  books.forEach((book) => {
+    const listItem = document.createElement('li');
+
+    // Changing the style of book whether read or not
+    if (book.alreadyRead) {
+      listItem.style.backgroundColor = 'green';
+    } else {
+      listItem.style.backgroundColor = 'red';
+    }
+
+    // Creating div element to hold the p elements
+    const detailsDiv = document.createElement('div');
+    detailsDiv.className = 'book-details';
+
+    // For each book creating p element with title and author
+    const titleElement = document.createElement('p');
+    titleElement.textContent = book.title;
+    titleElement.className = 'book-title';
+
+    const authorElement = document.createElement('p');
+    authorElement.textContent = book.author;
+    authorElement.className = 'book-author';
+
+    // Creating img element for each book
+    const imgElement = document.createElement('img');
+    imgElement.src = `./assets/${book.image}`;
+    imgElement.alt = `Book cover for ${book.title}`;
+
+    // Appending title and author to details div
+    detailsDiv.appendChild(titleElement);
+    detailsDiv.appendChild(authorElement);
+
+    // Appending img and details div to li element
+    listItem.appendChild(imgElement);
+    listItem.appendChild(detailsDiv);
+
+    // Appending li element to ul element
+    bookList.appendChild(listItem);
+  });
+
+  return bookList;
 }
 
 function main() {
@@ -28,18 +72,21 @@ function main() {
       author: 'Don Norman',
       isbn: '978-0465050659',
       alreadyRead: false,
+      image: 'the_design_of_everyday_things.jpg',
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
       alreadyRead: true,
+      image: 'the_most_human_human.jpg',
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
       alreadyRead: true,
+      image: 'the_pragmatic_programmer.jpg',
     },
   ];
 

@@ -20,8 +20,54 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const catElement = document.querySelector('img');
+const walkingCat = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+const dancingCat =
+  'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+
+let position = 0;
+let leftMove = 10;
+const screenWidth = window.innerWidth;
+let isDancing = false;
+let hasDanced = false;
+let movementInterval;
+
 function catWalk() {
-  // TODO complete this function
+  if (isDancing) {
+    return;
+  }
+
+  position += leftMove;
+  catElement.style.left = position + 'px';
+
+  const middleScreen = screenWidth / 2;
+
+  if (
+    position >= middleScreen - catElement.offsetWidth / 2 &&
+    position <= middleScreen + catElement.offsetWidth / 2
+  ) {
+    if (!hasDanced) {
+      isDancing = true;
+      catElement.src = dancingCat;
+      hasDanced = true;
+
+      setTimeout(() => {
+        catElement.src = walkingCat;
+        isDancing = false;
+      }, 5000);
+    }
+  }
+
+  if (position >= screenWidth) {
+    position = 0;
+    hasDanced = false;
+    clearInterval(movementInterval); //Clearing the interval when the cat reaches to the end
+    setInterval(() => {
+      catWalk(); // Restarting the cat walk interval after clearing
+    }, 50);
+  }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', function () {
+  movementInterval = setInterval(catWalk, 50);
+});
