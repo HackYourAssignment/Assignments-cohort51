@@ -41,3 +41,11 @@ img{
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+.read{
+  color:white;
+  background-color: green;
+}
+.not-read{
+  color: white;
+  background-color: red;
+}
